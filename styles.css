@@ -1,0 +1,83 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+header {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    padding: 0.75rem 1.5rem;
+    background-color: #4ca1af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2c3e50;
+}
+
+section {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#features .feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.feature-item {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-item h3 {
+    color: #4ca1af;
+    margin-bottom: 0.75rem;
+}
+
+footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #222;
+    color: #888;
+    font-size: 0.9rem;
+}
