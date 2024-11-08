@@ -7,16 +7,16 @@
 }
 
 body {
-    background-color: #121212;
-    color: #ddd;
+    background-color: #0d1f0e; /* Dark green background */
+    color: #e3f2e1; /* Light green text for readability */
     line-height: 1.6;
 }
 
 header {
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    background: linear-gradient(to right, #004d26, #1f8a4c); /* Dark to medium green gradient */
     text-align: center;
     padding: 3rem 1rem;
-    color: #fff;
+    color: #e3f2e1;
 }
 
 header h1 {
@@ -31,15 +31,15 @@ header p {
 
 .button {
     padding: 0.75rem 1.5rem;
-    background-color: #4ca1af;
-    color: #fff;
+    background-color: #1f8a4c; /* Medium green */
+    color: #e3f2e1;
     text-decoration: none;
     border-radius: 5px;
     transition: background 0.3s ease;
 }
 
 .button:hover {
-    background-color: #2c3e50;
+    background-color: #004d26; /* Dark green on hover */
 }
 
 section {
@@ -59,7 +59,7 @@ section {
 .feature-item {
     flex: 1 1 250px;
     padding: 1.5rem;
-    background-color: #1e1e1e;
+    background-color: #14381a; /* Darker green background for feature items */
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -70,14 +70,14 @@ section {
 }
 
 .feature-item h3 {
-    color: #4ca1af;
+    color: #1f8a4c; /* Medium green for feature headings */
     margin-bottom: 0.75rem;
 }
 
 /* Notice box */
 .notice-box {
-    background-color: #333;
-    color: #ffa500;
+    background-color: #243d2e; /* Muted green */
+    color: #a5d6a7; /* Soft green text for the notice box */
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 1rem;
@@ -94,7 +94,7 @@ section {
 footer {
     padding: 1rem;
     text-align: center;
-    background-color: #222;
-    color: #888;
+    background-color: #0e2b15; /* Very dark green */
+    color: #a5d6a7; /* Light green */
     font-size: 0.9rem;
 }
