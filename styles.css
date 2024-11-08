@@ -74,6 +74,23 @@ section {
     margin-bottom: 0.75rem;
 }
 
+/* Notice box */
+.notice-box {
+    background-color: #333;
+    color: #ffa500;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Download button */
+.download-button {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+
 footer {
     padding: 1rem;
     text-align: center;
