@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PixelFlow - Google Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212; /* Dark mode background */
+            color: #e0e0e0; /* Light gray text */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #1e1e1e; /* Darker container for contrast */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #4CAF50; /* Green accent color */
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+        input[type="text"] {
+            width: 80%;
+            padding: 12px;
+            font-size: 16px;
+            border: 2px solid #333;
+            border-radius: 25px;
+            outline: none;
+            background-color: #2a2a2a; /* Dark input background */
+            color: #e0e0e0;
+            transition: border-color 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #4CAF50; /* Green border on focus */
+            background-color: #333; /* Slightly lighter background */
+        }
+        button {
+            padding: 12px 20px;
+            margin-top: 10px;
+            background-color: #4CAF50; /* Green accent color */
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>PixelFlow - Google Search</h1>
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="q" placeholder="Search Google..." required>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <script>
+        // Optional: Adding a simple focus effect to the search input field
+        const inputField = document.querySelector('input[type="text"]');
+        
+        inputField.addEventListener('focus', () => {
+            inputField.style.boxShadow = '0 0 8px rgba(76, 175, 80, 0.5)'; // Green shadow
+        });
+
+        inputField.addEventListener('blur', () => {
+            inputField.style.boxShadow = 'none';
+        });
+    </script>
+</body>
+</html>
